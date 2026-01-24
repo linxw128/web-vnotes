@@ -10,8 +10,8 @@ app.use(express.json()); // 解析JSON格式的请求体
 
 app.post('/webhook', (req, res) => {
   // 步骤1：验证请求（至关重要！）
-  const signature = req.headers['x-hub-signature-256']; // 例如GitHub的签名头
-  if (!verifySignature(req.body, signature, WEBHOOK_SECRET)) {
+//   const signature = req.headers['x-hub-signature-256']; // 例如GitHub的签名头
+  if (!verifySignature(WEBHOOK_SECRET, req.header, req.body)) {
     console.error('Webhook签名验证失败');
     return res.status(403).send('Forbidden');
   }
@@ -30,12 +30,55 @@ app.post('/webhook', (req, res) => {
   });
 });
 
-// 签名验证函数示例（以GitHub为例）
-function verifySignature(payload, signature, secret) {
-  const hmac = crypto.createHmac('sha256', secret);
-  const digest = 'sha256=' + hmac.update(JSON.stringify(payload)).digest('hex');
-  return crypto.timingSafeEqual(Buffer.from(digest), Buffer.from(signature || ''));
+async function verifySignature(secret, header, payload) {
+    let parts = header.split("=");
+    let sigHex = parts[1];
+
+    let algorithm = { name: "HMAC", hash: { name: 'SHA-256' } };
+
+    let keyBytes = encoder.encode(secret);
+    let extractable = false;
+    let key = await crypto.subtle.importKey(
+        "raw",
+        keyBytes,
+        algorithm,
+        extractable,
+        [ "sign", "verify" ],
+    );
+
+    let sigBytes = hexToBytes(sigHex);
+    let dataBytes = encoder.encode(payload);
+    let equal = await crypto.subtle.verify(
+        algorithm.name,
+        key,
+        sigBytes,
+        dataBytes,
+    );
+
+    return equal;
 }
+
+function hexToBytes(hex) {
+    let len = hex.length / 2;
+    let bytes = new Uint8Array(len);
+
+    let index = 0;
+    for (let i = 0; i < hex.length; i += 2) {
+        let c = hex.slice(i, i + 2);
+        let b = parseInt(c, 16);
+        bytes[index] = b;
+        index += 1;
+    }
+
+    return bytes;
+}
+
+// 签名验证函数示例（以GitHub为例） deepseek generate
+// function verifySignature(payload, signature, secret) {
+//   const hmac = crypto.createHmac('sha256', secret);
+//   const digest = 'sha256=' + hmac.update(JSON.stringify(payload)).digest('hex');
+//   return crypto.timingSafeEqual(Buffer.from(digest), Buffer.from(signature || ''));
+// }
 
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {

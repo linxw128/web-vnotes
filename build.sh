@@ -8,3 +8,4 @@ echo "commit and push"
 git add .
 git commit -m "WIP: 临时保存进度"
 git push -u origin main
+echo "finish"

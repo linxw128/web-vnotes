@@ -10,8 +10,8 @@ app.use(express.json()); // 解析JSON格式的请求体
 
 app.post('/webhook', (req, res) => {
   // 步骤1：验证请求（至关重要！）
-//   const signature = req.headers['x-hub-signature-256']; // 例如GitHub的签名头
-  if (!verifySignature(WEBHOOK_SECRET, req.header, req.body)) {
+  const signature = req.headers['x-hub-signature-256']; // 例如GitHub的签名头
+  if (!verifySignature(WEBHOOK_SECRET, signature, req.body)) {
     console.error('Webhook签名验证失败');
     return res.status(403).send('Forbidden');
   }
@@ -30,9 +30,8 @@ app.post('/webhook', (req, res) => {
   });
 });
 
-async function verifySignature(secret, header, payload) {
-    let parts = header.split("=");
-    let sigHex = parts[1];
+async function verifySignature(secret, signature, payload) {
+    let sigHex = signature;
 
     let algorithm = { name: "HMAC", hash: { name: 'SHA-256' } };
 

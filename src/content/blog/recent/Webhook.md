@@ -137,4 +137,4 @@ cp -r dist/* /var/www/your-site/
 echo "✨ 所有操作已完成！"
 ```
 
-ready5
+ready6

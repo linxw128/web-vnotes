@@ -3,6 +3,8 @@ const { exec } = require('child_process');
 const crypto = require('crypto');
 const app = express();
 
+let encoder = new TextEncoder();
+
 // 用于验证的密钥（请设置为环境变量，不要硬编码）
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || 'your_secret_key_here';
 

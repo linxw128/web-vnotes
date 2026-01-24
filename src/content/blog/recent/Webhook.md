@@ -136,3 +136,5 @@ npm run build                   # 执行Astro构建
 cp -r dist/* /var/www/your-site/
 echo "✨ 所有操作已完成！"
 ```
+
+ready

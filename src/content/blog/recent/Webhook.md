@@ -7,7 +7,7 @@ draft: false
 tags: ["Webhook"]
 ---
 
-、### Template
+### Template
 ```node
 // webhook-server.js
 const express = require('express');
@@ -137,4 +137,4 @@ cp -r dist/* /var/www/your-site/
 echo "✨ 所有操作已完成！"
 ```
 
-ready8
+ready10

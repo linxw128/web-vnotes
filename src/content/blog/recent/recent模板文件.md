@@ -1,11 +1,10 @@
 ---
 title: 模板文件
 description: 模板文件
-category: "WEB"
+category: WEB
 pubDate: 2026-01-24
-draft: false
-tags: ["template"]
+draft: true
+tags:
+  - template
 ---
-
-xxx
-some contents
+模板文件

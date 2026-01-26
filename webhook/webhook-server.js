@@ -11,6 +11,7 @@ const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || 'your_secret_key_here';
 app.use(express.json()); // 解析JSON格式的请求体
 
 app.post('/webhook', (req, res) => {
+  console.log((new Date()).toLocaleString())
   // 步骤1：验证请求（至关重要！）
   const signature = req.headers['x-hub-signature-256']; // 例如GitHub的签名头
   if (!verifySignature(WEBHOOK_SECRET, signature, req.body)) {

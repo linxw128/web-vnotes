@@ -6,6 +6,6 @@ tar -czf dist.tar.gz dist
 tar -czf webhook.tar.gz webhook
 echo "commit and push"
 git add .
-git commit -m "WIP: 临时保存进度"
+git commit -m
 git push -u origin main
 echo "finish"

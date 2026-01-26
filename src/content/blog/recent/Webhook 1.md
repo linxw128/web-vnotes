@@ -1,10 +1,11 @@
 ---
 title: Webhook
 description: Webhook
-category: "WEB"
-pubDate: 2026-01-24
+category: WEB
+pubDate: 2026-01-26
 draft: false
-tags: ["Webhook"]
+tags:
+  - Webhook
 ---
         <p class="text-center"><a href="/private_blog">private_post</a></p>
 ### Template

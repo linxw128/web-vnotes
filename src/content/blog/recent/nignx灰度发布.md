@@ -6,7 +6,9 @@ pubDate: 2026-01-24
 draft: false
 tags: ["nginx"]
 ---
+## toc
 
+## nignx灰度发布
 ### Core Setting
 in *http block*
 ``` shell 

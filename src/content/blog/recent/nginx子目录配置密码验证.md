@@ -9,7 +9,7 @@ tags:
 ---
 ## toc
 
-
+## nginx子目录配置密码验证
 ### Generate htpasswd
 ```shell
 # 安装 htpasswd 工具（如果未安装）
@@ -54,8 +54,3 @@ server {
 }
 ```
 
-
-
-|     |     |
-| --- | --- |
-|     |     |

@@ -55,3 +55,5 @@ channel.basic_consume(callback,              #从队列里去消息
 print(' [*] Waiting for messages. To exit press CTRL+C')
 channel.start_consuming()
 ```
+
+![[rabbitmqimage1.png]]

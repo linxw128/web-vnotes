@@ -7,7 +7,10 @@ draft: false
 tags:
   - nignx
 ---
-### Setting
+## Contents
+
+
+### Generate htpasswd
 ```shell
 # 安装 htpasswd 工具（如果未安装）
 # Ubuntu/Debian
@@ -27,7 +30,7 @@ sudo htpasswd /etc/nginx/.htpasswd username2
 cat /etc/nginx/.htpasswd
 ```
 
-nginx.conf
+### Setting in nginx.conf
 ```deploy.sh
 server {
     listen 80;

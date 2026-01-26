@@ -1,10 +1,11 @@
 ---
 title: npm依赖问题
 description: npm依赖问题
-category: "WEB"
+category: WEB
 pubDate: 2024-12-01
-tags: ['payloadcms']
-featured: True
+tags:
+  - payloadcms
+featured: true
 ---
 
 - 删除lock文件，重新pnpm install

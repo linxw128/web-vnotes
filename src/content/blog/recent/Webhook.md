@@ -6,7 +6,6 @@ pubDate: 2026-01-24
 draft: false
 tags: ["Webhook"]
 ---
-        <p class="text-center"><a href="/private_blog">private_post</a></p>
 ### Template
 ```node
 // webhook-server.js
@@ -137,4 +136,3 @@ cp -r dist/* /var/www/your-site/
 echo "✨ 所有操作已完成！"
 ```
 
-ready10

@@ -6,6 +6,6 @@ tar -czf dist.tar.gz dist
 tar -czf webhook.tar.gz webhook
 echo "commit and push"
 git add .
-git commit
+git commit -m 
 git push origin main 
 echo "finish"

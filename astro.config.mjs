@@ -18,7 +18,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "one-dark-pro"
     },
-    remarkPlugins: [ [remarkToc, { heading: 'toc', maxDepth: 3 } ] ],
+    remarkPlugins: [ [remarkToc, { heading: 'Toc', maxDepth: 3 } ] ],
     rehypePlugins: [rehypeAccessibleEmojis],
   }
 });

@@ -22,4 +22,13 @@ const private_blog = defineCollection({
   }),
 });
 
-export const collections = { blog, private_blog };
+const platform_blog = defineCollection({
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.coerce.date(),
+  }),
+});
+
+export const collections = { blog, private_blog, platform_blog };

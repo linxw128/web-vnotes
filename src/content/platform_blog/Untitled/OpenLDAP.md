@@ -1,14 +1,17 @@
 ---
-Title: OpenLDAP
-Description: OpenLDAP
-Category: "WEB"
-PubDate: 2026-1-28
-Draft: false
-Tags: ["ldap"]
+title: OpenLDAP
+description: OpenLDAP
+category: WEB
+pubDate: 2026-01-28
+draft: false
+tags:
+  - ldap
 ---
+
 ## Toc
 
-## 生成配置并重启服务
+## Contents
+### 生成配置并重启服务
 
 ```shell
 #!/bin/bash
@@ -170,7 +173,7 @@ rm /usr/local/openldap/etc/openldap/slapd.d/* -fr
 ```
 
 **步奏五：**
-![[Pasted image 20260128151144.png]]
+![[pic_sambapicture.png]]
 
 同时，认证系统写入 LDAP时需要再加上该密码编码
 

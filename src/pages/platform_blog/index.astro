@@ -5,7 +5,7 @@ import Layout from "../../layouts/MainLayout.astro";
 import PostCard from "../../components/PostCard.astro";
 import SearchPosts from "../../components/SearchPosts.astro";
 
-const posts = (await getCollection("private_blog")).sort(
+const posts = (await getCollection("platform_blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---

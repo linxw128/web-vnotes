@@ -172,7 +172,7 @@ rm /usr/local/openldap/etc/openldap/slapd.d/* -fr
 /usr/local/openldap/libexec/slapd
 ```
 
-**步奏五：**
+**步骤五：**
 ![[pic_sambapicture.png]]
 
 同时，认证系统写入 LDAP时需要再加上该密码编码

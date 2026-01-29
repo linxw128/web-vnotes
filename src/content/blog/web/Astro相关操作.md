@@ -32,6 +32,9 @@ export const collections = { blog, private_blog, platform_blog };
 ``` node
 type Props = CollectionEntry<"platform_blog">;
 ```
+``` node
+href={`/platform_blog/${post.slug}`}
+```
 
 3 添加 content 下的文件夹
 并编辑 markdown 文件
@@ -59,8 +62,9 @@ type Props = CollectionEntry<"platform_blog">;
 Frontmatter does not match collection schema.
 title: Required
 description: Required
-pubdate: Invalid date
+pubDate: Invalid date
 ```
 
 解决方法：
-2026-1-28 => 2026-01-28
+1 查看title、pubdate的大小写问题；
+2 2026-1-28 => 2026-01-28

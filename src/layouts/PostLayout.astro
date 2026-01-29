@@ -5,7 +5,8 @@ import MainLayout from "./MainLayout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">["data"];
-
+type Props_private_blog = CollectionEntry<"private_blog">["data"];
+type Props_platform_blog = CollectionEntry<"platform_blog">["data"];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 

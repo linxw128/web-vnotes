@@ -9,7 +9,10 @@ export async function GET() {
     description: SITE_DESCRIPTION,
     site: SITE_URL,
     items: posts.map((post) => ({
-      ...post.data,
+      title: post.data.title,
+      description: post.data.description,
+      pubDate: new Date(post.data.pubDate),
+      updatedDate: post.data.updatedDate ? new Date(post.data.updatedDate) : undefined,
       link: `/blog/${post.slug}/`,
     })),
   });

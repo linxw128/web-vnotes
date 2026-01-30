@@ -7,8 +7,6 @@ draft: false
 tags:
   - nignx
 ---
-## toc
-
 ## nginx子目录配置密码验证
 ### Generate htpasswd
 ```shell

@@ -11,19 +11,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <MainLayout title={title} description={description}>
-  <section class="max-w-3xl mx-auto my-8">
-    {
-      heroImage && (
-        <div class="border border-zinc-800">
-          <img
-            src={heroImage}
-            alt={title}
-            class="w-full aspect-[2/1] object-cover"
-          />
-        </div>
-      )
-    }
-    <div>
+  <section class="w-full my-8">
+    <div class="max-w-3xl mx-auto">
+      {
+        heroImage && (
+          <div class="border border-zinc-800">
+            <img
+              src={heroImage}
+              alt={title}
+              class="w-full aspect-[2/1] object-cover"
+            />
+          </div>
+        )
+      }
       <div class="py-6 border-b border-zinc-800">
         <h1 class="text-center text-4xl font-semibold" transition:name={title}>
           {title}
@@ -42,9 +42,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           }
         </div>
       </div>
-      <article class="prose prose-invert py-8 mx-auto">
-        <slot />
-      </article>
+    </div>
+
+    <!-- Main grid: centered container with sidebar + content -->
+    <div class="w-full">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-[200px_minmax(0,1fr)] gap-8 items-start">
+          <div class="hidden lg:block">
+            <slot name="sidebar" />
+          </div>
+          <div>
+            <article class="prose prose-invert py-8">
+              <slot />
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </MainLayout>

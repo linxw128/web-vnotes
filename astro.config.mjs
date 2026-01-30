@@ -4,8 +4,8 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
-import remarkToc from 'remark-toc';
-import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis';
+// import remarkToc from 'remark-toc';
+// import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis';
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
@@ -18,7 +18,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "one-dark-pro"
     },
-    remarkPlugins: [ [remarkToc, { heading: 'Toc', maxDepth: 3 } ] ],
-    rehypePlugins: [rehypeAccessibleEmojis],
+    // remarkPlugins: [ [remarkToc, { heading: 'Toc', maxDepth: 3 } ] ],
+    // rehypePlugins: [rehypeAccessibleEmojis],
   }
 });

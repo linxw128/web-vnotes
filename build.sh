@@ -6,6 +6,6 @@ tar -czf dist.tar.gz dist
 tar -czf webhook.tar.gz webhook
 echo "commit and push"
 git add .
-git commit -m "add remarkToc plugin"
+git commit -m "TOC aside layout"
 git push origin main 
 echo "finish"

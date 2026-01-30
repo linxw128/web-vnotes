@@ -1,6 +1,8 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import PostLayout from "../../layouts/PostLayout.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
+
 
 export async function getStaticPaths() {
   const posts = await getCollection("platform_blog");
@@ -12,9 +14,15 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"platform_blog">;
 
 const post = Astro.props;
-const { Content } = await post.render();
+const { headings, Content } = await post.render();
 ---
 
 <PostLayout {...post.data}>
-  <Content />
+
+  <!-- Desktop: place TOC into the left sidebar slot -->
+  <TableOfContents slot="sidebar" headings={headings} />
+
+  <div>
+    <Content />
+  </div>
 </PostLayout>

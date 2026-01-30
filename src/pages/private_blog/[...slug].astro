@@ -18,10 +18,11 @@ const { headings, Content } = await post.render();
 ---
 
 <PostLayout {...post.data}>
-  <div class="flex gap-8">
-    <TableOfContents headings={headings} />
-    <div class="flex-1">
-      <Content />
-    </div>
+
+  <!-- Desktop: place TOC into the left sidebar slot -->
+  <TableOfContents slot="sidebar" headings={headings} title={post.data.title} />
+
+  <div>
+    <Content />
   </div>
 </PostLayout>

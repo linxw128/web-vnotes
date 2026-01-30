@@ -20,7 +20,7 @@ const { headings, Content } = await post.render();
 <PostLayout {...post.data}>
 
   <!-- Desktop: place TOC into the left sidebar slot -->
-  <TableOfContents slot="sidebar" headings={headings} />
+  <TableOfContents slot="sidebar" headings={headings} title={post.data.title} />
 
   <div>
     <Content />

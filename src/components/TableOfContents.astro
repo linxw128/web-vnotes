@@ -5,9 +5,10 @@ export interface Props {
     slug: string;
     text: string;
   }>;
+  title?: string;
 }
 
-const { headings = [] } = Astro.props;
+const { headings = [], title } = Astro.props;
 ---
 
 {headings.length > 0 && (
@@ -28,7 +29,7 @@ const { headings = [] } = Astro.props;
 
     <!-- Desktop: sticky left column (initially static, sticks when scrolled) -->
     <nav aria-label="Table of contents" id="toc-main" class="toc not-prose hidden lg:block w-48 lg:sticky lg:top-24 self-start z-20 bg-zinc-900/80 p-3 rounded shadow-lg">
-      <h3 class="font-semibold mb-4">本页内容</h3>
+      <h3 class="font-semibold mb-4">{title ?? '本页内容'}</h3>
       <ul class="space-y-2 text-sm max-h-[calc(100vh-6rem)] overflow-auto">
         {headings.map((heading) => (
           <li style={`margin-left: ${(heading.depth - 1) * 1}rem;`}>

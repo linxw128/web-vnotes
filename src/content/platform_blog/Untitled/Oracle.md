@@ -6,10 +6,6 @@ pubDate: 2026-01-28
 draft: false
 tags: ["oracle"]
 ---
-
-## toc
-
-## contents
 ###  表空间扩容（OA）
 查看表空间情况
 ```SQL

@@ -30,7 +30,7 @@ const { headings = [], title } = Astro.props;
     <!-- Desktop: sticky left column (initially static, sticks when scrolled) -->
     <nav aria-label="Table of contents" id="toc-main" class="toc not-prose hidden lg:block w-48 lg:sticky lg:top-24 self-start z-20 bg-zinc-900/80 p-3 rounded shadow-lg">
       <h3 class="font-semibold mb-4">{title ?? '本页内容'}</h3>
-      <ul class="space-y-2 text-sm max-h-[calc(100vh-6rem)] overflow-auto">
+      <ul id="toc-list" class="space-y-2 text-sm max-h-[calc(100vh-12rem)] overflow-auto">
         {headings.map((heading) => (
           <li style={`margin-left: ${(heading.depth - 1) * 1}rem;`}>
             <a href={`#${heading.slug}`} class="hover:text-blue-400">
@@ -48,6 +48,7 @@ const { headings = [], title } = Astro.props;
         const TOP = 96; // px
         const LG_MIN = 1024; // tailwind lg breakpoint
         const nav = document.getElementById('toc-main');
+        const ulEl = document.getElementById('toc-list');
         if (!nav) return;
         let placeholder = null;
         let fixed = false;
@@ -58,6 +59,13 @@ const { headings = [], title } = Astro.props;
           if (placeholder && placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
           const rect = nav.getBoundingClientRect();
           originalOffset = rect.top + window.scrollY;
+        }
+
+        function updateMaxHeight() {
+          if (!ulEl) return;
+          const bottomMargin = 64; // px extra space from viewport bottom
+          const available = Math.max(120, window.innerHeight - TOP - bottomMargin); // at least 120px
+          ulEl.style.maxHeight = available + 'px';
         }
 
         function toFixed() {
@@ -75,6 +83,8 @@ const { headings = [], title } = Astro.props;
           nav.style.width = rect.width + 'px';
           nav.classList.add('shadow-2xl');
           fixed = true;
+          // ensure inner list height fits within viewport when fixed
+          updateMaxHeight();
         }
 
         function toStatic() {
@@ -100,12 +110,15 @@ const { headings = [], title } = Astro.props;
           } else if (scrolled < originalOffset && fixed) {
             toStatic();
           }
+          // update list height on scroll in case viewport changed (e.g., browser UI)
+          updateMaxHeight();
         }
 
         function onResize() {
           if (fixed) toStatic();
           originalOffset = null;
           calcOriginalOffset();
+          updateMaxHeight();
           onScroll();
         }
 

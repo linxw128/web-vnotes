@@ -6,6 +6,6 @@ tar -czf dist.tar.gz dist
 tar -czf webhook.tar.gz webhook
 echo "commit and push"
 git add .
-git commit -m "Add baidu tongji js code"
+git commit -m "Add code scrollbar and copy button"
 git push origin main 
 echo "finish"

@@ -37,5 +37,47 @@ const { title, description, heroImage } = Astro.props;
       <slot />
     </main>
     <Footer />
+
+    <!-- Code copy buttons: inject copy button into each pre block -->
+    <script>
+      (function(){
+        if (typeof window === 'undefined') return;
+        function addCopyButtons(){
+          const pres = document.querySelectorAll('pre');
+          pres.forEach(pre => {
+            if (pre.querySelector('.code-copy')) return; // already added
+            const btn = document.createElement('button');
+            btn.className = 'code-copy';
+            btn.type = 'button';
+            btn.setAttribute('aria-label', 'Copy code');
+            btn.innerHTML = '<span class="label">复制</span><span class="copied" aria-hidden>已复制</span>';
+            btn.addEventListener('click', async (e) => {
+              const code = pre.querySelector('code');
+              if (!code) return;
+              const text = code.innerText || code.textContent || '';
+              try {
+                await navigator.clipboard.writeText(text);
+                btn.classList.add('copied');
+                setTimeout(()=> btn.classList.remove('copied'), 1400);
+              } catch (err) {
+                // fallback
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand('copy'); btn.classList.add('copied'); setTimeout(()=> btn.classList.remove('copied'), 1400); } catch(e){}
+                document.body.removeChild(ta);
+              }
+            });
+            pre.appendChild(btn);
+          });
+        }
+        document.addEventListener('DOMContentLoaded', addCopyButtons);
+        // Also run after a short delay for content rendered after load
+        setTimeout(addCopyButtons, 500);
+      })();
+    </script>
   </body>
 </html>

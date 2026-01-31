@@ -24,6 +24,16 @@ WHERE a.tablespace_name = b.tablespace_name
 AND a.tablespace_name = 'TS_OA_D';
 ```
 
+查看磁盘组
+```
+su - grid
+sqlplus / as sysasm
+
+select instance_name from v$instance;
+
+select GROUP_NUMBER,NAME,TOTAL_MB,FREE_MB from v$asm_diskgroup;
+```
+
 查看数据文件情况
 ```SQL
 SELECT 

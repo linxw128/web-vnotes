@@ -6,9 +6,6 @@ pubDate: 2026-01-28
 draft: false
 tags: ["docker"]
 ---
-## Toc
-
-## Contents
 ### 安装
 #### Set up Docker's apt repository
 https://docs.docker.com/engine/install/ubuntu/
@@ -53,6 +50,24 @@ docker pull 镜像名称 -–registry-mirror=国内镜像源地址
   "registry-mirrors": ["https://hub-mirror.c.163.com"]
 }
 ```
+
+或者直接：
+```
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+    "registry-mirrors": [
+    "https://docker.m.daocloud.io",
+    "https://docker.imgdb.de",
+    "https://docker-0.unsee.tech",
+    "https://docker.hlmirror.com",
+    "https://cjie.eu.org"
+    ]
+}
+EOF
+
+sudo systemctl restart docker
+```
+
 
 重启服务
 ```
@@ -101,3 +116,57 @@ sudo docker load -i transdualbind-v1.0.tar
 
 #### 运行
 sudo docker run -d -v ~/transappdata:/usr/src/app/transappdata -p 3001:3001 transdualbind:1.0
+
+#### 拉取镜像
+```
+sudo docker pull node:24-alpine
+```
+
+运行镜像
+```
+sudo docker pull openresty/openresty:alpine
+
+docker run -v /home/dministrator/nginx/conf.d:/etc/nginx/conf.d -p 80:80 openresty/openresty:alpine
+```
+
+#### docker构建image
+```
+vim Dockerfile 
+--
+FROM node:24-alpine
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3001
+CMD [ "node", "index.js" ]
+--
+
+vim .dockerignore
+--
+node_modules
+frontend/transpage/node_modules
+.git
+.gitignore
+--
+
+
+sudo docker build --no-cache -t transdualbind:1.0 .
+
+sudo docker save transdualbind:1.0 -o transdualbind-v1.0.tar 
+
+sudo docker run -d -v ~/transappdata:/usr/src/app/transappdata -p 3001:3001 transdualbind:1.0
+```
+
+#### docker镜像迁移
+```
+sudo docker images
+sudo docker save transdualbind:1.0 -o transdualbind-v1.0.tar 
+
+# in another computer
+sudo docker load -i transdualbind-v1.0.tar 
+
+# run
+sudo docker run -d -v ~/transappdata:/usr/src/app/transappdata -p 3001:3001 transdualbind:1.0
+```
+

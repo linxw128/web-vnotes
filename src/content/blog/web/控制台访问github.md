@@ -9,6 +9,7 @@ cover_image: ""
 canonical_url: false
 ---
 
+
 cmd
 ```
 set HTTPS_PROXY=socks5://127.0.0.1:10808
@@ -54,3 +55,29 @@ proxy_servers:
     http: http://username:password@corp.com:8080
     https: https://username:password@corp.com:8080
 ```
+
+#### 仓库创建
+…or create a new repository on the command line
+echo "# myblogs" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/linxw128/myblogs.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/linxw128/myblogs.git
+git branch -M main
+git push -u origin main
+
+#### 仓库推送配置
+配置
+git config --global user.name "linxiaowei"
+git config --global user.email "linxw128@163.com"
+
+
+git add -A
+git commit -m "初始文件"
+git push -u origin master

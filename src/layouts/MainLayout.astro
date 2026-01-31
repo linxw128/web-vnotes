@@ -18,10 +18,19 @@ const { title, description, heroImage } = Astro.props;
 
 <!doctype html>
 <html lang="ZH">
-  <head>
-    <BaseHead {title} {description} image={heroImage} />
-    <ViewTransitions />
-  </head>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?166da62870e9cc4f43a33bf7cce0c72b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <BaseHead {title} {description} image={heroImage} />
+  <ViewTransitions />
+
   <body class="bg-[#161616] text-stone-200">
     <Header />
     <main class="max-w-5xl px-3 md:px-6 mx-auto">

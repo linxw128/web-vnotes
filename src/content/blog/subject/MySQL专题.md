@@ -5,8 +5,9 @@ category: WEB
 pubDate: 2026-01-25
 draft: false
 tags:
-  - github
+  - mysql
 ---
+## MySQL专题
 #### mysql主从同步方案
 
 1. **基于二进制日志（Binlog）的主从同步方案**

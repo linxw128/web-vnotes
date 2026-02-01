@@ -1,10 +1,11 @@
 ---
-title: Astro相关操作
-description: Astro相关操作
-category: "WEB"
+title: Astro专题
+description: Astro专题
+category: WEB
 pubDate: 2026-01-29
 draft: false
-tags: ["astro"]
+tags:
+  - astro
 ---
 #### starlight
 wait

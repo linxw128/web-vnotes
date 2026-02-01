@@ -79,5 +79,70 @@ const { title, description, heroImage } = Astro.props;
         setTimeout(addCopyButtons, 500);
       })();
     </script>
+
+    <!-- Global delegated search handler (runs once on initial load) -->
+    <script>
+    (function(){
+      if (typeof window === 'undefined') return;
+      if (window.__astro_search_delegated) return;
+      window.__astro_search_delegated = true;
+
+      function escapeHtml(str) {
+        return String(str).replace(/[&<>\"']/g, function(m){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'})[m]; });
+      }
+
+      function renderResultsInto(root, items) {
+        const results = root.querySelector('#SearchResults');
+        if (!items || items.length === 0) {
+          results.innerHTML = '<div class="text-sm text-gray-400">No results</div>';
+          return;
+        }
+        const html = items.map(item => {
+          const title = item.title || '';
+          return `<a href="/blog/${item.slug}"><div class="text-green-500 text-xl p-2 border-b border-zinc-800 hover:bg-zinc-800 hover:text-white transition-all ease-in-out duration-300 cursor-pointer">${escapeHtml(title)}</div></a>`;
+        }).join('');
+        results.innerHTML = html;
+      }
+
+      function ensurePosts(container) {
+        if (container.__searchPosts) return container.__searchPosts;
+        const dataEl = container.querySelector('.__SEARCH_INDEX_DATA');
+        const raw = dataEl?.textContent || '[]';
+        try {
+          const posts = JSON.parse(raw);
+          container.__searchPosts = posts;
+          console.debug('[Search] index length:', posts.length);
+          return posts;
+        } catch (err) {
+          console.error('[Search] failed to parse index JSON', err, raw.slice(0, 200));
+          container.__searchPosts = [];
+          return container.__searchPosts;
+        }
+      }
+
+      document.addEventListener('input', function (e) {
+        try {
+          const el = e.target;
+          if (!el || el.id !== 'SearchBox') return;
+          const root = el.closest('.search-root');
+          if (!root) return;
+          const container = root.parentElement || root;
+          const q = (el.value || '').trim().toLowerCase();
+          if (!q) {
+            renderResultsInto(root, []);
+            return;
+          }
+          const posts = ensurePosts(container) || [];
+          const filtered = posts.filter(p => {
+            return (p.title && p.title.toLowerCase().includes(q)) || (p.description && p.description.toLowerCase().includes(q));
+          }).slice(0, 20);
+          console.debug('[Search] query:', q, 'results:', filtered.length);
+          renderResultsInto(root, filtered);
+        } catch (err) {
+          console.error('[Search] unexpected error', err);
+        }
+      }, { capture: false });
+    })();
+    </script>
   </body>
 </html>

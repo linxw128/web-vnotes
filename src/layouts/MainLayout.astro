@@ -144,5 +144,106 @@ const { title, description, heroImage } = Astro.props;
       }, { capture: false });
     })();
     </script>
+
+    <!-- Global TOC initializer: makes TOC sticky behavior work after client navigation -->
+    <script>
+    (function(){
+      if (typeof window === 'undefined') return;
+      if (window.__astro_toc_initialized) return;
+      window.__astro_toc_initialized = true;
+
+      const LG_MIN = 1024; // tailwind lg
+      const TOP = 96; // px (top-24)
+
+      function updateMaxHeight(ulEl) {
+        const bottomMargin = 64;
+        const available = Math.max(120, window.innerHeight - TOP - bottomMargin);
+        ulEl.style.maxHeight = available + 'px';
+      }
+
+      function makeSticky(nav) {
+        if (nav.__tocState && nav.__tocState.inited) return;
+        const ulEl = nav.querySelector('#toc-list');
+        let placeholder = null;
+        let fixed = false;
+        let originalOffset = null;
+
+        function calcOriginalOffset() {
+          if (placeholder && placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+          const rect = nav.getBoundingClientRect();
+          originalOffset = rect.top + window.scrollY;
+        }
+
+        function toFixed() {
+          if (fixed) return;
+          const rect = nav.getBoundingClientRect();
+          placeholder = document.createElement('div');
+          placeholder.style.width = rect.width + 'px';
+          placeholder.style.height = rect.height + 'px';
+          nav.parentNode.insertBefore(placeholder, nav);
+
+          nav.style.position = 'fixed';
+          nav.style.top = TOP + 'px';
+          nav.style.left = rect.left + 'px';
+          nav.style.width = rect.width + 'px';
+          nav.classList.add('shadow-2xl');
+          fixed = true;
+          updateMaxHeight(ulEl);
+        }
+
+        function toStatic() {
+          if (!fixed) return;
+          if (placeholder && placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+          nav.style.position = '';
+          nav.style.top = '';
+          nav.style.left = '';
+          nav.style.width = '';
+          nav.classList.remove('shadow-2xl');
+          fixed = false;
+        }
+
+        function onScroll() {
+          if (window.innerWidth < LG_MIN) {
+            if (fixed) toStatic();
+            return;
+          }
+          if (originalOffset === null) calcOriginalOffset();
+          const scrolled = window.scrollY + TOP;
+          if (scrolled >= originalOffset && !fixed) {
+            toFixed();
+          } else if (scrolled < originalOffset && fixed) {
+            toStatic();
+          }
+          updateMaxHeight(ulEl);
+        }
+
+        function onResize() {
+          if (fixed) toStatic();
+          originalOffset = null;
+          calcOriginalOffset();
+          updateMaxHeight(ulEl);
+          onScroll();
+        }
+
+        // attach handlers
+        nav.__tocState = { inited: true, onScroll, onResize };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onResize);
+        requestAnimationFrame(onScroll);
+      }
+
+      function scanAndInit() {
+        document.querySelectorAll('#toc-main').forEach(makeSticky);
+      }
+
+      // initialize now and on DOM mutations (client navigation)
+      scanAndInit();
+      const mo = new MutationObserver(scanAndInit);
+      mo.observe(document.body, { childList: true, subtree: true });
+
+      // Also re-run on navigation events if using SPA-like routing
+      window.addEventListener('astro:navigation:end', scanAndInit);
+    })();
+    </script>
   </body>
 </html>

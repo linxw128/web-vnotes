@@ -6,6 +6,9 @@ pubDate: 2026-01-29
 draft: false
 tags: ["astro"]
 ---
+#### starlight
+wait
+
 #### 添加子content
 1 编辑config.ts
 ```

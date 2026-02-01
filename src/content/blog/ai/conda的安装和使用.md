@@ -1,10 +1,11 @@
 ---
 title: conda的安装和使用
 description: conda的安装和使用
-category: "AI"
-pubDate: 2024-02-25
+category: AI
+pubDate: 2026-02-01
 draft: false
-tags: ["ai","conda"]
+tags:
+  - ai
 cover_image: ""
 canonical_url: false
 ---

@@ -1,15 +1,12 @@
 ---
-title: 控制台访问github
-description: 控制台访问github
-category: "WEB"
-pubDate: 2024-02-25
+title: V2rayN的vmess解析
+description: V2rayN的vmess解析
+category: WEB
+pubDate: 2026-01-26
 draft: false
-tags: ["github"]
-cover_image: ""
-canonical_url: false
+tags:
+  - vmess
 ---
-
-
 cmd
 ```
 set HTTPS_PROXY=socks5://127.0.0.1:10808
@@ -54,30 +51,38 @@ conda config --set proxy_servers.https https://proxy.tld
 proxy_servers:
     http: http://username:password@corp.com:8080
     https: https://username:password@corp.com:8080
+
 ```
 
-#### 仓库创建
-…or create a new repository on the command line
-echo "# myblogs" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/linxw128/myblogs.git
-git push -u origin main
 
+#### V2rayN的vmess解析
+```
+from urllib.request import urlopen
+import requests
+subscribe_url = 'https://xxxxxx/link/a5yH61LodK3BkzIb?sub=3'
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/linxw128/myblogs.git
-git branch -M main
-git push -u origin main
+requests.packages.urllib3.disable_warnings()
+return_content = requests.get(subscribe_url, verify=False).text
+#return_content = urlopen(subscribe_url).read()
+print(return_content)
 
-#### 仓库推送配置
-配置
-git config --global user.name "linxiaowei"
-git config --global user.email "linxw128@163.com"
+from base64 import b64decode
+share_links = b64decode(return_content).decode('utf-8').splitlines()
+print(share_links)
 
+from urllib.parse import urlsplit
+import json
+schemes_allow = ['vmess']
+configs = []
+netloc = ''
+for share_link in share_links:
+    url = urlsplit(share_link)
+    if url.scheme not in schemes_allow: continue
+    netloc = share_link[8:]
+    print(netloc)
+    configs.append(json.loads(b64decode(netloc).decode('utf-8')))
+print(configs)
 
-git add -A
-git commit -m "初始文件"
-git push -u origin master
+for conf in configs:
+    print(conf)
+```

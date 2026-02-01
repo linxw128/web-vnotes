@@ -1,10 +1,11 @@
 ---
-title: 阿里云code-server配置
-description: 阿里云code-server配置
-category: "WEB"
+title: code-server配置
+description: code-server配置
+category: WEB
 pubDate: 2024-03-10
 draft: false
-tags: ["github"]
+tags:
+  - github
 cover_image: ""
 canonical_url: false
 ---

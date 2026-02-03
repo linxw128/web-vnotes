@@ -1,10 +1,12 @@
 ---
-title: conda的安装和使用
-description: conda的安装和使用
-category: "AI"
+title: chatbot_by_python
+description: chatbot_by_python
+category: AI
 pubDate: 2024-02-25
 draft: false
-tags: ["ai","conda"]
+tags:
+  - ai
+  - conda
 cover_image: ""
 canonical_url: false
 ---

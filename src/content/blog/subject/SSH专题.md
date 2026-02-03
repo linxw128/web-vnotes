@@ -12,13 +12,13 @@ canonical_url: false
 
 ### 远程主机配置ssh转发
 
-vim /etc/ssh/sshd_config
+	vim /etc/ssh/sshd_config
 
-Gateway_port yes
+		Gateway_port yes
 
-service sshd restart
+	service sshd restart
 
-service ssh restart
+	service ssh restart
 
 ### 2 Mac 开启ssh服务（mac界面操作偏好设置->共享),并创建隧道
 
@@ -30,8 +30,7 @@ ssh -N -R 6666:localhost:22 root@www.vnotes.cn
 
 ssh lxw@localhost -p 6666
 
-### 测试成功后，就可以从任意的联网主机进行连接到Mac了(注意阿里云要加策略开放6666端
+### 连接
+测试成功后，就可以从任意的联网主机进行连接到Mac了(注意阿里云要加策略开放6666端口)
 
-口)
-
-ssh lxw@www.vnotes.cn -p 6666```
+	ssh lxw@www.vnotes.cn -p 6666

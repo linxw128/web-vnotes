@@ -40,16 +40,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 #### 源配置
 命令行
-```
-docker pull 镜像名称 -–registry-mirror=国内镜像源地址
-```
+	docker pull 镜像名称 -–registry-mirror=国内镜像源地址
 
 配置文件
-```
-{
-  "registry-mirrors": ["https://hub-mirror.c.163.com"]
-}
-```
+	{
+	  "registry-mirrors": ["https://hub-mirror.c.163.com"]
+	}
 
 或者直接：
 ```
@@ -70,9 +66,7 @@ sudo systemctl restart docker
 
 
 重启服务
-```
-sudo systemctl restart docker
-```
+	sudo systemctl restart docker
 
 ### 基本常见操作
 #### 启动镜像
@@ -94,33 +88,31 @@ docker run -d -p 8080:8080 -p 80:80 \
 
 
 #### 进入容器
-Docker exec -it CONTAINER-ID sh
+	docker exec -it CONTAINER-ID sh
 
 #### 停止容器
-Docker stop  CONTAINER-ID
+	docker stop  CONTAINER-ID
 
 #### 启动容器
-Docker start CONTAINER-ID
+	docker start CONTAINER-ID
 
 #### 重启
-Docker restart CONTAINER-ID
+	docker restart CONTAINER-ID
 
 
 ### Image 的导出导入
 #### 导出
-sudo docker images
-sudo docker save transdualbind:1.0 -o transdualbind-v1.0.tar 
+	sudo docker images
+	sudo docker save transdualbind:1.0 -o transdualbind-v1.0.tar 
 
 #### 导出
-sudo docker load -i transdualbind-v1.0.tar 
+	sudo docker load -i transdualbind-v1.0.tar 
 
 #### 运行
-sudo docker run -d -v ~/transappdata:/usr/src/app/transappdata -p 3001:3001 transdualbind:1.0
+	sudo docker run -d -v ~/transappdata:/usr/src/app/transappdata -p 3001:3001 transdualbind:1.0
 
 #### 拉取镜像
-```
-sudo docker pull node:24-alpine
-```
+	sudo docker pull node:24-alpine
 
 运行镜像
 ```

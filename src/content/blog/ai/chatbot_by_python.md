@@ -10,7 +10,7 @@ tags:
 cover_image: ""
 canonical_url: false
 ---
-
+```
 import streamlit as st
 from langchain_community.llms import Ollama
 from langchain.prompts import PromptTemplate
@@ -74,3 +74,5 @@ if prompt := st.chat_input("请输入你的问题："):
 
     # 添加模型回答到会话状态
     st.session_state.messages.append({"role": "assistant", "content": full_response})
+    
+```

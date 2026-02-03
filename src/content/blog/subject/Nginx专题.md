@@ -10,9 +10,7 @@ tags:
 ## nginx基本配置
 
 #### 运行命令
-```
-nginx -s signal
-```
+	nginx -s signal
 Where _signal_ may be one of the following:
 
 - `stop` — fast shutdown

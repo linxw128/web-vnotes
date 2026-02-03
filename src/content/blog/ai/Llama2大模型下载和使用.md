@@ -32,9 +32,7 @@ model_dir = snapshot_download('FlagAlpha/Atom-7B-Chat')
 
 Git下载
 
-```shell
-git clone https://www.modelscope.cn/FlagAlpha/Atom-7B-Chat.git
-```
+	git clone https://www.modelscope.cn/FlagAlpha/Atom-7B-Chat.git
 
 默认下载在[魔搭社区](https://modelscope.cn/docs/模型的下载)
 

@@ -97,3 +97,28 @@ code[data-line-numbers] > [data-line]::before {
   text-align: right;
   color: #9ca3af; /* gray-400 */
 }
+
+/* Ensure H5/H6 in .prose have visible heading styles (Tailwind Typography might be customized) */
+.prose h5,
+.prose-invert h5 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose h6,
+.prose-invert h6 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Improve visual distinction: slightly lighter color in inverted mode */
+.prose-invert h5,
+.prose-invert h6 {
+  color: #e5e7eb; /* gray-200 */
+}

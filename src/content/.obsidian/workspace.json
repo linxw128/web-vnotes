@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "315dd22d62bd2e41",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3da9d8d3604035a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "531a1e334a8e4126",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "platform_blog/Untitled/OpenLDAP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OpenLDAP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a0cbb59fbfc1c8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fb1dc0179fdca0b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "578c9c79f4286600",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "510dcb05db1e1044",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "软件工程",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ea774aee540272a3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "9ffd6b1ae77141ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5798656c6ec0144",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c38f880da514fbf2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "platform_blog/Oracle.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Oracle"
+            }
+          },
+          {
+            "id": "c91edcf6fa29ce81",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "platform_blog/Oracle.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Oracle"
+            }
+          },
+          {
+            "id": "3e20716fcca070d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "338a5c1a86889c76",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "107eb17797e9ec94",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "platform_blog/Oracle.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Oracle"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "531a1e334a8e4126",
+  "lastOpenFiles": [
+    "platform_blog/Untitled/Oracle.md",
+    "platform_blog/Untitled/OpenLDAP.md",
+    "blog/_run code.md",
+    "blog/网址链接.md",
+    "blog/Untitled.base",
+    "private_blog/sa/5 软件工程/软件工程.md",
+    "private_blog/sa/6 数据库/数据库.md",
+    "platform_blog/Untitled/OpenLDAP.md~",
+    "blog/subject/SSH专题.md",
+    "blog/subject/Redis专题.md",
+    "blog/subject/Nginx专题.md",
+    "blog/ai/conda的安装和使用.md",
+    "blog/web/javascript专题.md",
+    "blog/web/elastic search安装和配置.md",
+    "blog/web/express的next和Router.md",
+    "private_blog/sa/2 计算机系统基础知识/计算机系统基础知识.md",
+    "blog/subject/V2rayN专题.md",
+    "blog/subject/OpenGauss专题.md",
+    "blog/subject/MySQL专题.md",
+    "blog/subject/Docker专题.md",
+    "blog/subject/Astro专题.md",
+    "blog/subject/_recent模板文件.md",
+    "blog/ai/chatbot_by_python.md",
+    "blog/ai/Llama2大模型下载和使用.md",
+    "blog/subject/Github专题.md",
+    "private_blog/sa/7 软件架构/软件架构.md",
+    "private_blog/sa/8 系统质量属性与架构评估/系统质量属性与架构评估.md",
+    "private_blog/sa/9 软件可靠性基础知识/软件可靠性基础知识.md",
+    "private_blog/sa/系统架构设计师教程第二版可搜索.pdf",
+    "private_blog/sa/10 软件架构的演化和维护",
+    "private_blog/sa/9 软件可靠性基础知识",
+    "private_blog/subject",
+    "private_blog/sa/5 软件工程/pic_view.png",
+    "blog/web/rabbitmqimage1.png",
+    "blog/Untitled 1.base",
+    "private_blog/sa/5 软件工程/pic_nj.png",
+    "private_blog/sa/5 软件工程/pic_oh.png",
+    "private_blog/sa/5 软件工程/pic_extreme.png",
+    "private_blog/sa/7 软件架构/pic_ABSD.png",
+    "Untitled.base",
+    "private_blog/sa/2 计算机系统基础知识",
+    "private_blog/sa/微服务架构",
+    "platform_blog/Untitled/pic_grid_infrastructure_processes.png",
+    "private_blog/sa/5 软件工程/pic_prototype.png",
+    "private_blog/sa/5 软件工程/pic_rup.png",
+    "private_blog/sa/5 软件工程/pic_waterfall.png",
+    "blog/Untitled.canvas",
+    "blog/Untitled 1.canvas"
+  ]
+}

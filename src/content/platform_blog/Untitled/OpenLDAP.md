@@ -8,9 +8,6 @@ tags:
   - ldap
 ---
 
-## Toc
-
-## Contents
 ### 生成配置并重启服务
 
 ```shell
@@ -50,6 +47,7 @@ cp /usr/local/openldap/var/openldap-data/DB_CONFIG.example /usr/local/openldap/v
 /usr/local/openldap/sbin/slapcat -l ~/mju_base.ldif
 ```
 
+  > j
 报错如下，不用管。
 
 	The first database does not allow slapcat; using the first available one (2)

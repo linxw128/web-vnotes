@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "addf303916c770b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe512f57b50bd9ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68fd0139bc86df67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sa/_软件架构目录.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_软件架构目录"
+            }
+          },
+          {
+            "id": "dd9aeea3252602cb",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Untitled 1.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled 1"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1bbe4724e704a511",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5e0de986996fcf3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63bd70ad89f86fe9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "6b84b798678b8523",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0760ad7bbce12b2e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e16eb27cf774b0e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdfca7e13f4b1e15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d338279562fb399d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sa/Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Untitled"
+            }
+          },
+          {
+            "id": "5891f50f434246ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "sa/Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Untitled"
+            }
+          },
+          {
+            "id": "80280c85cfe0819d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "tags"
+            }
+          },
+          {
+            "id": "772354d39cf01e9d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e77cbd5186e440ac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sa/Untitled.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "63bd70ad89f86fe9",
+  "lastOpenFiles": [
+    "2026-01-28.md",
+    "Untitled 1.base",
+    "Untitled.canvas",
+    "Untitled.base",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "web/nginx基本配置.md",
+    "recent/nginx子目录配置密码验证.md",
+    "_run code.md",
+    "recent/配置github专用SSH密钥.md",
+    "recent/nignx灰度发布.md",
+    "recent/RabbitMQ的Python代码.md",
+    "recent/rabbitmqimage1.png",
+    "recent/remarktoc.md",
+    "recent/Webhook.md",
+    "markdown.md",
+    "web/npm依赖问题.md",
+    "().md",
+    "recent/_recent模板文件.md",
+    "recent/resource",
+    "web/_网页主题.md",
+    "nginx子目录配置密码验证.md",
+    "sa/软件架构/分层架构.md",
+    "sa/软件架构/管道架构.md",
+    "sa/_软件架构目录.md",
+    "sa/_sa模板文件.md",
+    "sa/软件架构",
+    "2026-01-24.md",
+    "sa/Untitled.md",
+    "sa"
+  ]
+}

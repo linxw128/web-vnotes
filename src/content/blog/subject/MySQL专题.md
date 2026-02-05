@@ -17,14 +17,14 @@ tags:
 	- 在从库的`my.cnf`中，配置要连接的主库信息，包括主库的 IP 地址、端口、用于复制的用户名和密码等。例如：
 
 ```text-plain
-       server - id = 2
-       relay - log = mysql - relay - bin
-       log - slave - updates = 1
-       read - only = 1
-       master - host = master_ip
-       master - port = master_port
-       master - user = repl_user
-       master - password = password
+   server - id = 2
+   relay - log = mysql - relay - bin
+   log - slave - updates = 1
+   read - only = 1
+   master - host = master_ip
+   master - port = master_port
+   master - user = repl_user
+   master - password = password
 ```
 
 - 其中，`server - id`用于唯一标识从库，`relay - log`是从库用于存储从主库获取的二进制日志的中继日志，`log - slave - updates`表示从库自己的更新操作也记录到二进制日志中（在级联复制等场景下有用），`read - only`设置从库为只读模式（防止从库被误写，确保数据一致性）。
@@ -133,7 +133,6 @@ tags:
 	- **便于备份和维护**：从库可以用于数据备份和一些维护操作（如数据报表生成等），而不会影响主库的正常运行。
 
 #### 数据分片方案：哈希分片与一致性哈希分片
-**数据分片方案：哈希分片与一致性哈希分片**  
 
 在处理大规模数据时，为了提高数据存储和查询的效率、可扩展性以及系统的可用性，数据分片是一种常用的技术手段。哈希分片和一致性哈希分片是其中两种重要的方案，它们在不同的应用场景下各有优劣。
 ##### 哈希分片方案

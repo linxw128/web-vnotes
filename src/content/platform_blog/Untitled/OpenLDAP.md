@@ -47,7 +47,6 @@ cp /usr/local/openldap/var/openldap-data/DB_CONFIG.example /usr/local/openldap/v
 /usr/local/openldap/sbin/slapcat -l ~/mju_base.ldif
 ```
 
-  > j
 报错如下，不用管。
 
 	The first database does not allow slapcat; using the first available one (2)
@@ -78,7 +77,7 @@ cp /usr/local/openldap/var/openldap-data/DB_CONFIG.example /usr/local/openldap/v
 ### 构建 index
 log出现：
 
-slapd[20840]: <= bdb_equality_candidates: (uid) not indexed
+	slapd[20840]: <= bdb_equality_candidates: (uid) not indexed
 
 1. 停止slapd
 

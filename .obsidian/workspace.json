@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "919cb1b410ed916f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2e5ae649c6f30bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2170da357df67946",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a57d3c9f55bc3554",
+    "type": "split",
+    "children": [
+      {
+        "id": "6dbae19fb4222a2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03932cf6bfa17be2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c566ff10893844a1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a1d8dfc2602bdd2b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6fc57fde3d9d4985",
+    "type": "split",
+    "children": [
+      {
+        "id": "02310d103f49fe8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd783785337598e0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "180af438a96cf4f5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0c2e1d594934267f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fcf56caaa18a460c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2170da357df67946",
+  "lastOpenFiles": [
+    "dist/sitemap-index.xml",
+    "dist/sitemap-0.xml",
+    "dist/_astro/pic_ABSD.DVYfBf8Z_ZyxxRu.webp",
+    "dist/_astro/pic_view.BPJps4UQ_Z12OxSC.webp",
+    "dist/_astro/pic_oh.DMYpr074_2JxtX.webp",
+    "dist/_astro/pic_extreme.jKNWtT8A_10R4wr.webp",
+    "dist/_astro/pic_rup.T8q6tGZb_coXom.webp",
+    "dist/_astro/pic_spiral.Cr8vx6Gp_Z106XT.webp",
+    "dist/_astro/pic_nj.TvwlaAKt_9Otk2.webp",
+    "dist/_astro/pic_waterfall.DPa1y04v_Z1RFLfe.webp",
+    "dist/_astro/pic_prototype.BAeKQ712_Pb14X.webp",
+    "dist/_astro/pic_grid_infrastructure_processes.CB2YnQ2b_PiEJJ.webp",
+    "dist/index.html",
+    "dist/vue/index.html",
+    "dist/vue",
+    "dist/rss.xml",
+    "dist/private_blog/sa/微服务架构/微服务架构/index.html",
+    "dist/private_blog/sa/微服务架构/云原生/index.html",
+    "dist/private_blog/sa/9-软件可靠性基础知识/软件可靠性基础知识/index.html",
+    "dist/private_blog/sa/8-系统质量属性与架构评估/系统质量属性与架构评估/index.html",
+    "dist/private_blog/sa/7-软件架构/软件架构/index.html"
+  ]
+}

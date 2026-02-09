@@ -1,0 +1,73 @@
+---
+title: payloadcms
+description: payloadcms
+category: "WEB"
+pubDate: 2024-12-01
+tags: ['payloadcms']
+---
+
+#### 官网
+https://payloadcms.com/docs/getting-started/installation
+
+
+#### 安装
+npx create-payload-app
+
+#### 运行
+开发模式使用
+npm run dev
+生产环境使用
+npm run build
+npm run start
+默认地址是localhost:3000
+首次创建一个邮箱，再用localhost:3000/admin登录
+3000端口是next.js的默认端口
+
+<style>{`
+/* 1. 统一盒模型：解决padding撑大元素的核心，避免尺寸溢出 */
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. 精准匹配Grid容器，去掉多余!important，保留核心样式 */
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px; /* 你的3列固定宽 */
+  grid-auto-rows: 100px; /* 你的行高 */
+  background-color: #2196F3;
+  padding: 10px;
+  gap: 0; /* 可选：加间距的话改数值，比如5px，你的原代码没加 */
+}
+
+/* 3. Grid子项：删除display:block，保留你的样式，加溢出控制 */
+.grid-container .grid-item {
+  background-color: rgba(155, 216, 34, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  /* 关键：避免内容溢出撑大网格项，解决错位 */
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* 4. 清除MDX默认边距：避免Grid容器被挤压 */
+article .grid-container {
+  margin: 0 !important;
+}
+`}</style>
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>

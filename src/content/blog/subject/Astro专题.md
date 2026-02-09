@@ -38,7 +38,7 @@ href={`/platform_blog/${post.slug}`}
 ```
 
 3 添加 content 下的文件夹
-并编辑 markdown 文件
+并<mark style="background: #D2B3FFA6;">编辑 markdown </mark>文件
 
 
 #### 常见问题

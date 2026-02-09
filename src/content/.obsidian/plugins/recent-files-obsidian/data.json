@@ -1,8 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "vibecoding",
+      "path": "blog/ai/vibecoding.md"
+    },
+    {
+      "basename": "Llama2大模型下载和使用",
+      "path": "blog/ai/Llama2大模型下载和使用.md"
+    },
+    {
+      "basename": "大模型",
+      "path": "blog/ai/大模型.md"
+    },
+    {
+      "basename": "软件可靠性基础知识",
+      "path": "private_blog/sa/9 软件可靠性基础知识/软件可靠性基础知识.md"
+    },
+    {
+      "basename": "软件工程",
+      "path": "private_blog/sa/5 软件工程/软件工程.md"
+    },
+    {
+      "basename": "论文笔记",
+      "path": "private_blog/subject/论文笔记.md"
+    },
+    {
+      "basename": "OAuth2.0认证",
+      "path": "blog/web/OAuth2.0认证.md"
+    },
+    {
+      "basename": "RabbitMQ的Python代码",
+      "path": "blog/web/RabbitMQ的Python代码.md"
+    },
+    {
+      "basename": "conda的安装和使用",
+      "path": "blog/ai/conda的安装和使用.md"
+    },
+    {
+      "basename": "Docker专题",
+      "path": "blog/subject/Docker专题.md"
+    },
+    {
       "basename": "Astro专题",
       "path": "blog/subject/Astro专题.md"
+    },
+    {
+      "basename": "Tailwind",
+      "path": "blog/subject/Tailwind.md"
+    },
+    {
+      "basename": "Github专题",
+      "path": "blog/subject/Github专题.md"
+    },
+    {
+      "basename": "Markdown-writing",
+      "path": "blog/subject/Markdown-writing.md"
+    },
+    {
+      "basename": "chatbot_by_python",
+      "path": "blog/ai/chatbot_by_python.md"
     },
     {
       "basename": "_recent模板文件",

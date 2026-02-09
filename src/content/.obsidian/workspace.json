@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/subject/Astro专题.md",
-                "mode": "preview",
+                "file": "blog/ai/vibecoding.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Astro专题"
+              "title": "vibecoding"
             }
           },
           {
@@ -33,18 +33,6 @@
               },
               "icon": "lucide-file",
               "title": "Tailwind"
-            }
-          },
-          {
-            "id": "8987dc2e0977231d",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
             }
           }
         ]
@@ -130,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/subject/Tailwind.md",
+                "file": "blog/ai/vibecoding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Tailwind"
+              "title": "Backlinks for vibecoding"
             }
           },
           {
@@ -200,13 +188,23 @@
               "icon": "lucide-list",
               "title": "Outline of Tailwind"
             }
+          },
+          {
+            "id": "2cde1e259a2a5fbc",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 440.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,48 +214,50 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "copilot:Open Copilot Chat": false
     }
   },
   "active": "531a1e334a8e4126",
   "lastOpenFiles": [
-    "blog/subject/_recent模板文件.md",
+    "blog/ai/Llama2大模型下载和使用.md",
+    "blog/ai/vibecoding.md",
+    "blog/ai/大模型.md",
+    "private_blog/sa/9 软件可靠性基础知识/软件可靠性基础知识.md",
+    "private_blog/sa/5 软件工程/软件工程.md",
+    "private_blog/subject/论文笔记.md",
+    "blog/web/OAuth2.0认证.md",
+    "blog/web/RabbitMQ的Python代码.md",
+    "blog/ai/conda的安装和使用.md",
+    "blog/subject/Docker专题.md",
     "blog/subject/Astro专题.md",
-    "Untitled 1.base",
-    "Untitled 2.base",
-    "blog/subject/MySQL专题.md",
-    "blog/subject/Markdown-writing.md",
     "blog/subject/Tailwind.md",
     "blog/subject/Github专题.md",
-    "blog/subject/Docker专题.md",
+    "blog/subject/Markdown-writing.md",
+    "copilot/copilot-conversations/帮我写一段关于常用大模型的比较的博文@20260209_211425.md",
+    "copilot/copilot-conversations",
+    "blog/ai/chatbot_by_python.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "Untitled 1.base",
+    "Untitled 2.base",
     "blog/web/payloadcms.mdx",
-    "blog/subject/V2rayN专题.md",
-    "private_blog/sa/10 软件架构的演化和维护/软件架构的演化和维护.md",
-    "private_blog/sa/9 软件可靠性基础知识/软件可靠性基础知识.md",
-    "blog/subject/Nginx专题.md",
-    "blog/subject/OpenGauss专题.md",
-    "blog/subject/Redis专题.md",
-    "blog/subject/SSH专题.md",
-    "blog/subject/RESTful专题.md",
-    "private_blog/sa/微服务架构/微服务架构.md",
-    "private_blog/sa/微服务架构/云原生.md",
-    "blog/网址链接.md",
-    "blog/_run code.md",
-    "platform_blog/Untitled/OpenLDAP.md",
-    "private_blog/subject/论文笔记.md",
-    "platform_blog/Untitled/Oracle.md",
     "blog/Untitled.base",
-    "private_blog/sa/5 软件工程/软件工程.md",
-    "private_blog/sa/6 数据库/数据库.md",
     "platform_blog/Untitled/OpenLDAP.md~",
-    "blog/ai/conda的安装和使用.md",
     "private_blog/sa/系统架构设计师教程第二版可搜索.pdf",
     "private_blog/sa/10 软件架构的演化和维护",
-    "private_blog/sa/9 软件可靠性基础知识",
-    "private_blog/subject",
     "private_blog/sa/5 软件工程/pic_view.png",
     "blog/web/rabbitmqimage1.png",
-    "blog/Untitled 1.base",
     "private_blog/sa/5 软件工程/pic_nj.png",
     "private_blog/sa/5 软件工程/pic_oh.png",
     "private_blog/sa/5 软件工程/pic_extreme.png",

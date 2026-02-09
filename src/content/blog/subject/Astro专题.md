@@ -68,3 +68,10 @@ pubDate: Invalid date
 解决方法：
 1 查看title、pubdate的大小写问题；
 2 2026-1-28 => 2026-01-28
+
+
+
+> [!NOTE]-
+> 	- vibecoding将会取代软件工程师？
+> 	- vibecoding对于公司和个人会产生什么影响
+> 	- 我们个人将如何应对vibecoding带来的挑战和机遇

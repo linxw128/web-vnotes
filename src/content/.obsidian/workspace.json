@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/ai/vibecoding.md",
+                "file": "blog/subject/Astro专题.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "vibecoding"
+              "title": "Astro专题"
             }
           },
           {
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/ai/vibecoding.md",
+                "file": "blog/subject/Astro专题.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for vibecoding"
+              "title": "Backlinks for Astro专题"
             }
           },
           {
@@ -220,15 +220,16 @@
   },
   "active": "531a1e334a8e4126",
   "lastOpenFiles": [
-    "blog/ai/Llama2大模型下载和使用.md",
     "blog/ai/vibecoding.md",
+    "blog/ai/chatbot_by_python.md",
+    "blog/ai/Llama2大模型下载和使用.md",
+    "blog/ai/conda的安装和使用.md",
     "blog/ai/大模型.md",
     "private_blog/sa/9 软件可靠性基础知识/软件可靠性基础知识.md",
     "private_blog/sa/5 软件工程/软件工程.md",
     "private_blog/subject/论文笔记.md",
     "blog/web/OAuth2.0认证.md",
     "blog/web/RabbitMQ的Python代码.md",
-    "blog/ai/conda的安装和使用.md",
     "blog/subject/Docker专题.md",
     "blog/subject/Astro专题.md",
     "blog/subject/Tailwind.md",
@@ -236,7 +237,6 @@
     "blog/subject/Markdown-writing.md",
     "copilot/copilot-conversations/帮我写一段关于常用大模型的比较的博文@20260209_211425.md",
     "copilot/copilot-conversations",
-    "blog/ai/chatbot_by_python.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",

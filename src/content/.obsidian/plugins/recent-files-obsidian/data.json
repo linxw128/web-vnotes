@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Astro专题",
+      "path": "blog/subject/Astro专题.md"
+    },
+    {
       "basename": "vibecoding",
       "path": "blog/ai/vibecoding.md"
     },
     {
+      "basename": "chatbot_by_python",
+      "path": "blog/ai/chatbot_by_python.md"
+    },
+    {
       "basename": "Llama2大模型下载和使用",
       "path": "blog/ai/Llama2大模型下载和使用.md"
+    },
+    {
+      "basename": "conda的安装和使用",
+      "path": "blog/ai/conda的安装和使用.md"
     },
     {
       "basename": "大模型",
@@ -33,16 +45,8 @@
       "path": "blog/web/RabbitMQ的Python代码.md"
     },
     {
-      "basename": "conda的安装和使用",
-      "path": "blog/ai/conda的安装和使用.md"
-    },
-    {
       "basename": "Docker专题",
       "path": "blog/subject/Docker专题.md"
-    },
-    {
-      "basename": "Astro专题",
-      "path": "blog/subject/Astro专题.md"
     },
     {
       "basename": "Tailwind",
@@ -55,10 +59,6 @@
     {
       "basename": "Markdown-writing",
       "path": "blog/subject/Markdown-writing.md"
-    },
-    {
-      "basename": "chatbot_by_python",
-      "path": "blog/ai/chatbot_by_python.md"
     },
     {
       "basename": "_recent模板文件",

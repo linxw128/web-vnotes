@@ -67,7 +67,7 @@ pubDate: Invalid date
 
 解决方法：
 1 查看title、pubdate的大小写问题；
-2 2026-1-28 => 2026-01-28
+2 <mark style="background: #BBFABBA6;">2026-1-28 => 2026-</mark>01-28
 
 
 

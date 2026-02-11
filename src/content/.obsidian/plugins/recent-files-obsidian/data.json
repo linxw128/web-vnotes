@@ -1,20 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Astro专题",
-      "path": "blog/subject/Astro专题.md"
-    },
-    {
       "basename": "vibecoding",
       "path": "blog/ai/vibecoding.md"
     },
     {
-      "basename": "chatbot_by_python",
-      "path": "blog/ai/chatbot_by_python.md"
+      "basename": "Astro专题",
+      "path": "blog/subject/Astro专题.md"
     },
     {
       "basename": "Llama2大模型下载和使用",
       "path": "blog/ai/Llama2大模型下载和使用.md"
+    },
+    {
+      "basename": "chatbot_by_python",
+      "path": "blog/ai/chatbot_by_python.md"
     },
     {
       "basename": "conda的安装和使用",

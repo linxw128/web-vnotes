@@ -5,14 +5,35 @@ import Socials from "./Socials.astro";
 
 <footer class="border-t border-zinc-800 mt-16 font-light">
   <div class="py-4">
-    <div class="flex max-w-5xl px-3 md:px-6 mx-auto">
-      <div class="flex items-center justify-between w-full">
-        <p class="text-center">&copy; 2024 - {SITE_TITLE} 樾知云记  All rights reserved.</p>
-        <p class="text-center">备案号: <a href="https://beian.miit.gov.cn/">闽ICP备2024035729号</a></p>
-        <p class="text-center">email: vnotes@126.com</p>
-        <p class="text-center"><a href="/private_blog">private_post</a></p>
+    <div class="flex-column items-center justify-between max-w-5xl px-3 md:px-6 mx-auto">
+      <div style="text-align: center">
+          <span id="runningtime"></span>
+          <span>|</span>
+          <span>本网站已访问 <span id="busuanzi_value_page_pv" style=" color: hsl(192 98% 55%); font-weight: bold; "></span> 次</span>
+          <span>|</span>
+          <span>总访客 <span id="busuanzi_value_site_uv" style=" color: hsl(192 98% 55%); font-weight: bold; "></span> 人</span>
+        </div>
+        <div class="flex items-center justify-between w-full">
+          <p class="text-center">&copy; 2024 - {SITE_TITLE} 樾知云记  All rights reserved.</p>
+          <p class="text-center">备案号: <a href="https://beian.miit.gov.cn/">闽ICP备2024035729号</a></p>
+          <p class="text-center">email: vnotes@126.com</p>
+          <p class="text-center"><a href="/private_blog">private_post</a></p>
         <!-- <Socials /> -->
       </div>
     </div>
   </div>
+      <script type="text/javascript">function runtime() {
+        const t = new Date("06/25/2024 15:00:00"),
+            n = new Date,
+            s = n - t,
+            e = Math.floor(s / 1e3),
+            o = Math.floor(e / 86400),
+            i = Math.floor(e % 86400 / 3600),
+            a = Math.floor(e % 3600 / 60),
+            r = e % 60;
+        document.getElementById("runningtime").innerHTML = `⏱️本站已运行: ${o}天${i}小时${a}分${r}秒 `;
+    }
+    setInterval(runtime, 1e3);
+    </script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </footer>

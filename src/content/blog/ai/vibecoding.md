@@ -11,8 +11,7 @@ tags:
 
 方面：
 
-> [!NOTE]-
-> 	- vibecoding将会取代软件工程师？
+> 	- vibecoding将会<mark style="background: #BBFABBA6;">取代软件工程师</mark>？
 > 	- vibecoding对于公司和个人会产生什么影响
 > 	- 我们个人将如何应对vibecoding带来的挑战和机遇
 

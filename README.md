@@ -15,6 +15,7 @@ Verve follows best practices for a blog website.
 - Awesome Performance
 - SEO Optimized
 - Sitemap and RSS
+- Busuanzi
 
 ## ✅ Lighthouse Score
 

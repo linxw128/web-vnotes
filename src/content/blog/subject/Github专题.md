@@ -198,3 +198,10 @@ git remote add origin [URL_of_your_remote_repository]
 ```
 git push origin main
 ```
+
+
+其他副本仓库都要重新pull
+```
+git pull origin main --rebase
+```
+并手动处理冲突

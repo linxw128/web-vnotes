@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private_blog/sa/PDF资料.md",
+                "file": "blog/subject/Github专题.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "PDF资料"
+              "title": "Github专题"
             }
           },
           {
@@ -219,6 +219,7 @@
   },
   "active": "531a1e334a8e4126",
   "lastOpenFiles": [
+    "private_blog/sa/PDF资料.md",
     "blog/subject/Github专题.md",
     "blog/ai/vibecoding.md",
     "blog/subject/Astro专题.md",

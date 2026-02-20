@@ -167,3 +167,34 @@ cp -r dist/* /var/www/your-site/
 echo "✨ 所有操作已完成！"
 ```
 
+### .git瘦身
+
+```
+pip install git-filter-repo
+```
+在ubunut环境报错，解决方法如下：
+
+安装pipx
+```
+sudo apt install pipx
+```
+
+用pipx安装
+```
+ pipx install git-filter-repo
+```
+
+安装成功后，开始瘦身
+```
+ git filter-repo --strip-blobs-bigger-than 1M
+```
+
+瘦身后git remote -v看到远程仓库丢失，需重新添加
+```
+git remote add origin [URL_of_your_remote_repository]
+```
+
+强制覆盖远程仓库
+```
+git push origin main
+```

@@ -12,6 +12,8 @@ cmd
 set HTTPS_PROXY=socks5://127.0.0.1:10808
 set HTTP_PROXY=socks5://127.0.0.1:10808
 ```
+> 需要用**终端管理员**，否则不生效并会报socket5连接错误
+> 同时v2rayN需要开启**全局模式**，如果采用PAC依然会被绕过
 
 shell
 ```

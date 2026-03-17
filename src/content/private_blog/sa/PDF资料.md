@@ -15,7 +15,7 @@ tags:
 
 [2024.11系统架构设计师真题回忆.pdf](/PDF_files/2024.11系统架构设计师真题回忆.pdf)
 
-[2025年上半年系统架构设计师上午真题及答案解析]([https://www.bilibili.com/opus/1075159000055545861](https://www.bilibili.com/opus/1075159000055545861)
+[2025年上半年系统架构设计师上午真题及答案解析](https://www.bilibili.com/opus/1075159000055545861](https://www.bilibili.com/opus/1075159000055545861)
 
 [2025年上半年（5月）系统架构设计师案例题真题详解（一）](https://blog.csdn.net/qq_45860217/article/details/150485270)
 
